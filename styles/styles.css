@@ -5,17 +5,78 @@
     box-sizing: border-box;
 }
 
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.sticky-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sticky-header .nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.sticky-header .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.sticky-header .nav-links a:hover {
+    color: green;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-bar {
+    padding: 0.5rem;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.sign-in-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sign-in-button:hover {
+    background-color: darkgreen;
+}
+
+
 /* Hero Section */
 #hero {
     position: relative;
-    background: url('../images/hero-background.jpg') no-repeat center center;
+    background: url('../images/indexpg.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: blue;
+    color: black;
     text-align: center;
+    padding: 2rem;
 }
 
 .hero-content {
@@ -24,11 +85,15 @@
 
 .hero_content h1 {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    margin-bottom: 0.2rem;
 }
 
 #hero-button {
-    background-color: #007bff;
+    background-color: #76c76a;
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -38,5 +103,5 @@
 }
 
 #hero-button:hover {
-    background-color: #0056b3;
+    background-color: green;
 }
