@@ -1,4 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-	// JavaScript code for categories can be added here
+	// JavaScript code for categories will be added here
 	// For now, it's a static section
 });
